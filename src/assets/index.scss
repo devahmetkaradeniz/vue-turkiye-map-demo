@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 9999px;
+        border: 1px solid #dee2e6;
+        margin-bottom: 50px;
+        
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &.active {
+                border-radius: 9999px;
+                background-color: #dee2e6;
+            }
+        }
+    }
+}
